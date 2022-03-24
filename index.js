@@ -2,12 +2,16 @@ const path = require('path');
 let app = require('express')();
 const Content = require('./data/content');
 const bodyParser = require('body-parser')
+const cors = require('cors');
 
 // BodyParser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
 }))
+
+// Permet de lire le contenu du body des requêtes
+app.use(cors());
 
 app.listen(3100, () => {
   console.log('Server Launch on Port : 3100');
@@ -31,6 +35,12 @@ app.get('/content', (req, res) => {
 // qui est un package facilitant l'accès au body depuis le paramètre req
 app.post('/participate', (req, res) => {
   Content.push(req.body);
+  console.log(req.body);
+  res.send(Content);
+});
+
+app.post('/del', (req, res) => {
+  let id = req.body;
   console.log(req.body);
   res.send(Content);
 });

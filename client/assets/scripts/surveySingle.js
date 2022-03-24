@@ -20,6 +20,28 @@ fetch(url, options)
         }
     })
     .then((response) => {
-
         console.log(response)
-    });
+            //Display element information in the page
+        document.querySelector("#theName").innerHTML = response.name;
+        document.querySelector("#theCity").innerHTML = response.city;
+        document.querySelector("#theFood").innerHTML = response.favouriteFood;
+        document.querySelector("#theCard").style.backgroundColor = response.colour;
+});
+
+
+
+document.querySelector('#myDel').addEventListener('click', (e) => {
+    let delHeaders = new Headers();
+
+    let delUrl = '/del' ;
+    let delOptions = {
+    method: 'POST',
+    body:JSON.stringify(theId),
+    headers: delHeaders,
+    mode: 'cors',
+    cache: 'default'
+    };
+    
+    fetch(delUrl, delOptions);
+
+});

@@ -34,7 +34,7 @@
   </div>
 </nav>
 
-
+<br><br>
 <div class="container">
   <div class="row" id="">
     <div class="" id="theContent">
@@ -51,7 +51,7 @@
   </div>
   <hr>
   <button onclick="hideShow()" class="btn light-blue accent-1">Modifier cette entrée</button>
-  <button onclick="myDel()" class="btn red danger">Supprimer cette entrée</button>
+  <button id="myDel" class="btn red danger">Supprimer cette entrée</button>
 
 
   <div id="editEntry" style="display: none">
@@ -118,11 +118,7 @@
     }
   }
 
-  //Display element information in the page
-  document.getElementById("theName").innerHTML = Object.name;
-  document.getElementById("theCity").innerHTML = Object.city;
-  document.getElementById("theFood").innerHTML = Object.favouriteFood;
-  document.getElementById("theCard").setAttribute("style", "background-color:"  +  Object.color + '"');
+
 
 </script>
 </body>
