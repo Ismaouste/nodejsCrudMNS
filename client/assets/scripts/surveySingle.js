@@ -7,21 +7,19 @@ let theId = window.location.hash.split('#')[1];
 let myHeaders = new Headers();
 let url = '/survey/' + theId;
 let options = {
-  method: 'GET',
-  headers: myHeaders,
-  mode: 'cors',
-  cache: 'default'
+    method: 'GET',
+    headers: myHeaders,
+    mode: 'cors',
+    cache: 'default'
 };
 
 fetch(url, options)
-  .then((res) => {
-    if(res.ok) {
-      return res.json();
-    }
-  })
-  .then((response) => {
+    .then((res) => {
+        if (res.ok) {
+            return res.json();
+        }
+    })
+    .then((response) => {
 
-
-    
-    console.log(response)
-  });
+        console.log(response)
+    });
