@@ -11,6 +11,7 @@ document.querySelector('#participate').addEventListener('click', (e) => {
         name:document.querySelector('#name'),
         city:document.querySelector('#city'),
         favouriteFood:"seafood",
+        colour:"#f5b942",
         contactInformation:true
     };
 

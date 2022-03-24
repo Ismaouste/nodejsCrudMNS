@@ -1,18 +1,107 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="./client/assets/css/style.css">
-  <title>L'enquête</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+  />
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+  />
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <title>Participation</title>
 </head>
 <body>
-  <div id="theContent"></div>
+<nav class="green" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="/" class="brand-logo">ColorFoodCities</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="/pages/liste.html">L'enquête</a></li>
+      <li><a href="/pages/participate.html">Participer</a></li>
+    </ul>
 
-  <script src="../assets/scripts/surveySingle.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+    <ul id="nav-mobile" class="sidenav">
+      <li><a href="/pages/liste.html">L'enquête</a></li>
+      <li><a href="/pages/participate.html">Participer</a></li>
+    </ul>
+    <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+    ><i class="material-icons">menu</i></a
+    >
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="row" id="">
+    <div class="" id="theContent">
+
+      <div class="col s12 m12 l12 singleCard" style="background-color:">
+        <div class="card"></div>
+        <h3 class="cart-title" id="theName">{{}}</h3>
+        <span class="card-content flow-text">
+          <strong>City :</strong><p id="theCity"></p><strong>
+          <br>Favourite food :</strong><p id="theFood"></p><br>
+        </span>
+      </div>
+
+    </div>
+  </div>
+  <hr>
+<h2>Modifier cette entrée :</h2>
+  <form action="">
+    <div class="input-field col s6">
+      <input id="name" type="text" class="validate" />
+      <label for="name">Nom Prénom</label>
+    </div>
+    <div class="input-field col s6">
+      <input id="city" type="text" class="validate" />
+      <label for="city">City</label>
+    </div>
+    <div class="input-field col s6">
+      <select name="favouriteFood" id="favouriteFood">
+        <option value="sandwiches">Sandwiches</option>
+        <option value="cereals">Céréales</option>
+        <option value="salads">Salades</option>
+        <option value="stews">Ragoûts</option>
+        <option value="noodles">Nouilles</option>
+        <option value="soups">Soupes</option>
+        <option value="desserts">Desserts</option>
+      </select>
+      <label for="favouriteFood">Mon encas préféré</label>
+    </div>
+    <div class="input-field col s6">
+      <label for="colour"><input type="color" id="colour" name="colour" value="#f5b942" />
+        Ma couleur fétiche</label>
+      <br> <br> <br>
+    </div>
+    <div class="input-field col s6">
+      <label for="contactInformation">
+        <input id="contactInformation" type="checkbox" />
+        <span>J'accepte que ma participation figure sur la liste publique.</span>
+      </label>
+    </div>
+  </form>
+</div>
+
+<script src="../assets/scripts/surveySingle.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  M.AutoInit();
+
+  //value_element = document.getElementById("YourElementId").value
+  document.getElementById("theName").innerHTML = Object.name;
+  document.getElementById("theCity").innerHTML = Object.city;
+  document.getElementById("theFood").innerHTML = Object.favouriteFood;
+
+</script>
 </body>
 </html>

@@ -57,7 +57,7 @@ let Content=[
 	},
 	{
 		id:8,
-		name:"TadPena",
+		name:"Tad Pena",
 		city:"Tarnów",
 		favouriteFood:"seafood",
 		colour:"#dd7718",
@@ -65,7 +65,7 @@ let Content=[
 	},
 	{
 		id:9,
-		name:"BrendenGibson",
+		name:"Brenden Gibson",
 		city:"Tarma",
 		favouriteFood:"pasta",
 		colour:"#efd186",
@@ -81,7 +81,7 @@ let Content=[
 	},
 	{
 		id:11,
-		name:"FelixMacdonald",
+		name:"Felix Macdonald",
 		city:"Oslo",
 		favouriteFood:"noodles",
 		colour:"#f7c9ad",
@@ -89,7 +89,7 @@ let Content=[
 	},
 	{
 		id:12,
-		name:"CarlaWalsh",
+		name:"Carla Walsh",
 		city:"RíoIbáñez",
 		favouriteFood:"cereals",
 		colour:"#ffdbc1",
@@ -97,7 +97,7 @@ let Content=[
 	},
 	{
 		id:13,
-		name:"VivienGiles",
+		name:"Vivien Giles",
 		city:"Bochum",
 		favouriteFood:"stews",
 		colour:"#c69b0b",
@@ -105,7 +105,7 @@ let Content=[
 	},
 	{
 		id:14,
-		name:"HolleeHines",
+		name:"Hollee Hines",
 		city:"Kleinmachnow",
 		favouriteFood:"desserts",
 		colour:"#efba94",
@@ -113,7 +113,7 @@ let Content=[
 	},
 	{
 		id:15,
-		name:"PiperJames",
+		name:"Piper James",
 		city:"Chapecó",
 		favouriteFood:"desserts",
 		colour:"#c47017",
@@ -129,7 +129,7 @@ let Content=[
 	},
 	{
 		id:17,
-		name:"MerrillGomez",
+		name:"Merrill Gomez",
 		city:"Koppervik",
 		favouriteFood:"soups",
 		colour:"#e0c57b",
@@ -137,7 +137,7 @@ let Content=[
 	},
 	{
 		id:18,
-		name:"EmersonBush",
+		name:"Emerson Bush",
 		city:"Yunnan",
 		favouriteFood:"sandwiches",
 		colour:"#c47735",
@@ -145,7 +145,7 @@ let Content=[
 	},
 	{
 		id:19,
-		name:"EaganChaney",
+		name:"Eagan Chaney",
 		city:"Bargagli",
 		favouriteFood:"salads",
 		colour:"#f4d6a8",
@@ -153,7 +153,7 @@ let Content=[
 	},
 	{
 		id:20,
-		name:"YasirCampbell",
+		name:"Yasir Campbell",
 		city:"Tabaco",
 		favouriteFood:"desserts",
 		colour:"#ef6210",
@@ -161,7 +161,7 @@ let Content=[
 	},
 	{
 		id:21,
-		name:"DaltonAvery",
+		name:"Dalton Avery",
 		city:"Gävle",
 		favouriteFood:"soups",
 		colour:"#e0a245",
@@ -169,7 +169,7 @@ let Content=[
 	},
 	{
 		id:22,
-		name:"JadenKirby",
+		name:"Jaden Kirby",
 		city:"Castanhal",
 		favouriteFood:"salads",
 		colour:"#b2720a",
@@ -177,7 +177,7 @@ let Content=[
 	},
 	{
 		id:23,
-		name:"SteelBerg",
+		name:"Steel Berg",
 		city:"MountGambier",
 		favouriteFood:"salads",
 		colour:"#ffddcc",
@@ -185,7 +185,7 @@ let Content=[
 	},
 	{
 		id:24,
-		name:"TallulahNewman",
+		name:"Tallulah Newman",
 		city:"Calamar",
 		favouriteFood:"noodles",
 		colour:"#f2cc85",
@@ -193,7 +193,7 @@ let Content=[
 	},
 	{
 		id:25,
-		name:"DrewStein",
+		name:"Drew Stein",
 		city:"Ashburton",
 		favouriteFood:"sandwiches",
 		colour:"#e5a072",
@@ -201,7 +201,7 @@ let Content=[
 	},
 	{
 		id:26,
-		name:"TigerSolomon",
+		name:"Tiger Solomon",
 		city:"Karachi",
 		favouriteFood:"stews",
 		colour:"#ffebcc",
@@ -209,7 +209,7 @@ let Content=[
 	},
 	{
 		id:27,
-		name:"KellyHeath",
+		name:"Kelly Heath",
 		city:"Carmen",
 		favouriteFood:"desserts",
 		colour:"#d65b0e",
@@ -217,7 +217,7 @@ let Content=[
 	},
 	{
 		id:28,
-		name:"JamesWalker",
+		name:"James Walker",
 		city:"Duitama",
 		favouriteFood:"salads",
 		colour:"#f9ddbb",
@@ -226,7 +226,7 @@ let Content=[
 	{
 		id:29,
 		name:"Kitra Mitchell",
-		city:"PalmadeMallorca",
+		city:"Palma de Mallorca",
 		favouriteFood:"cereals",
 		colour:"#ffe9cc",
 		contactInformation:true
@@ -234,7 +234,7 @@ let Content=[
 	{
 		id:30,
 		name:"Aileen Hatfield",
-		city:"RioGrande",
+		city:"Rio Grande",
 		favouriteFood:"sandwiches",
 		colour:"#f4c7a1",
 		contactInformation:true

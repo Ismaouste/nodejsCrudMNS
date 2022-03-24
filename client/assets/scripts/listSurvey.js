@@ -23,7 +23,7 @@ fetch(url, options)
         let theCard = document.createElement('div');
         let theName = document.createElement('h3');
         let theP = document.createElement('span');
-        theP.innerHTML = `<strong>Name :</strong> ${elt.name} <strong><br>Favourite food :</strong> ${elt.favouriteFood}<br>`;
+        theP.innerHTML = `<strong>City :</strong> ${elt.city} <strong><br>Favourite food :</strong> ${elt.favouriteFood}<br>`;
         let theLink = document.createElement('a');
         theLink.href = './survey.html#' + elt.id;
         theLink.innerText = 'Details';
