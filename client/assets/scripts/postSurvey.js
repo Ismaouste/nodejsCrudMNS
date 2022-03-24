@@ -1,16 +1,18 @@
-let url = '/survey';
+let url = '/participate';
 
 
-// l'ajout
+// Récupérer le formulaire de la page /participate.html lors d'un clic sur le bouton "Post"
 document.querySelector('#participate').addEventListener('click', (e) => {
+  // Prévenir le rechargement automatique de la page après l'envoi du formulaire
   e.preventDefault();
-  let tmp = {
-    id:32,
-		name:document.querySelector('#name'),
-		city: document.querySelector('#city'),
-		favouriteFood:"seafood",
-		contactInformation:true
-  };
+    // Correspondance des champs du formulaire aux propriétés d'un élément de notre JSON data
+    let tmp = {
+        id:32,
+        name:document.querySelector('#name'),
+        city:document.querySelector('#city'),
+        favouriteFood:"seafood",
+        contactInformation:true
+    };
 
   let options = {
     method: 'POST',

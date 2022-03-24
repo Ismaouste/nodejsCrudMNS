@@ -17,7 +17,7 @@ fetch(url, options)
     }
   })
   .then((response) => {
-    // if (response) {console.log(response)}
+
     response.forEach(elt => {
       let theEntry = document.createElement('div');
       let theCard = document.createElement('div');
@@ -34,7 +34,7 @@ fetch(url, options)
       }
 
       theName.innerText = elt.name;
-  
+
       theEntry.classList.add('col', 's12', 'm6', 'l6', 'singleCard');
       theCard.classList.add('card');
       theName.classList.add('cart-title');
@@ -42,13 +42,10 @@ fetch(url, options)
       theLink.classList.add('card-action');
 
       containerContent.appendChild(theEntry);
-
       theEntry.appendChild(theCard);
       theEntry.appendChild(theName);
       theEntry.appendChild(theP);
       theEntry.appendChild(theLink);
-
-
     });
   })
 ;

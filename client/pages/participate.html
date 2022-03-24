@@ -15,17 +15,20 @@
       <a id="logo-container" href="/" class="brand-logo">ColorFoodCities</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="/pages/liste.html">L'enquête</a></li>
+        <li class="active"><a href="/pages/participate.html">Participer</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
         <li><a href="/pages/liste.html">L'enquête</a></li>
+        <li class="active"><a href="/pages/participate.html">Participer</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
 <br>
-  <div class="row">
+  <div class="container">
+
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
@@ -39,19 +42,21 @@
       </div>
 
       <div class="row">
-          <div class="input-field col s12">
-            <br><select>
-              <label for="favouriteCity">
-              <option value="" disabled selected>En choisir un seul</option>
-              <option id="" name="" value="sandwiches">Sandwiches</option>
-              <option value="cereals">Céréales</option>
-              <option value="salads">Salades</option>
-              <option value="stews">ragoûts</option>
-              <option value="noodles">Nouilles</option>
-              <option value="soups">Soupes</option>
-              <option value="desserts">Desserts</option>
-            </select>
-            <p>Mon encas préféré</p></label>
+          <div class="input-field col s6">
+
+            <br>
+            <select name="favouriteFood" id="favouriteFood">
+                <option value="sandwiches">Sandwiches</option>
+                <option value="cereals">Céréales</option>
+                <option value="salads">Salades</option>
+                <option value="stews">ragoûts</option>
+                <option value="noodles">Nouilles</option>
+                <option value="soups">Soupes</option>
+                <option value="desserts">Desserts</option>
+              </select>
+            <label for="favouriteFood">Mon encas préféré</label>
+
+
           </div>
       </div>     
 
@@ -65,21 +70,26 @@
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col s12">
+
           <br><br>
-          <button class="btn waves-effect waves-light" type="submit" id="participate" name="action" >Envoyer
-          <i class="material-icons right">send</i>
+          <button class="btn waves-effect waves-light" type="submit" id="participate" name="action">Envoyer
+          <i class="material-icons right">send</i></button>
+
         </div>
       </div>
-      </button>
+
+
     </form>
+
   </div>
 
   <script src="../assets/scripts/postSurvey.js"></script>
-  <script  src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
+    M.AutoInit();
 
   </script>
 </body>
