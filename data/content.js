@@ -225,7 +225,7 @@ let Content=[
 	},
 	{
 		id:29,
-		name:"KitraMitchell",
+		name:"Kitra Mitchell",
 		city:"PalmadeMallorca",
 		favouriteFood:"cereals",
 		colour:"#ffe9cc",
@@ -233,7 +233,7 @@ let Content=[
 	},
 	{
 		id:30,
-		name:"AileenHatfield",
+		name:"Aileen Hatfield",
 		city:"RioGrande",
 		favouriteFood:"sandwiches",
 		colour:"#f4c7a1",

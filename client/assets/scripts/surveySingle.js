@@ -20,5 +20,8 @@ fetch(url, options)
     }
   })
   .then((response) => {
+
+
+    
     console.log(response)
   });

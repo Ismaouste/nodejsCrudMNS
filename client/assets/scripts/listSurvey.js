@@ -50,39 +50,5 @@ fetch(url, options)
 
 
     });
-  });
-
-
-
-// l'ajout
-document.querySelector('#testPost').addEventListener('click', () => {
-  let tmp = {
-    id:32,
-		name:"Brooke Dorsey",
-		city:"Beijing",
-		favouriteFood:"seafood",
-		colour:"#f7ddb7",
-		contactInformation:true
-  };
-
-  let options = {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    },
-    mode: 'cors',
-    cache: 'default',
-    body: JSON.stringify(tmp)
-  }
-
-  fetch(url, options)
-    .then((res) => {
-      if(res.ok) {
-        return res.json();
-      }
-    })
-    .then((response) => {
-      console.log(response)
-    })
-});
+  })
+;
