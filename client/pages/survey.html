@@ -39,8 +39,7 @@
   <div class="row" id="">
     <div class="" id="theContent">
 
-      <div class="col s12 m12 l12 singleCard" style="background-color:">
-        <div class="card"></div>
+      <div class="col s12 m12 l12 singleCard" id="theCard">
         <h3 class="cart-title" id="theName">{{}}</h3>
         <span class="card-content flow-text">
           <strong>City :</strong><p id="theCity"></p><strong>
@@ -51,40 +50,51 @@
     </div>
   </div>
   <hr>
-<h2>Modifier cette entrée :</h2>
-  <form action="">
-    <div class="input-field col s6">
-      <input id="name" type="text" class="validate" />
-      <label for="name">Nom Prénom</label>
-    </div>
-    <div class="input-field col s6">
-      <input id="city" type="text" class="validate" />
-      <label for="city">City</label>
-    </div>
-    <div class="input-field col s6">
-      <select name="favouriteFood" id="favouriteFood">
-        <option value="sandwiches">Sandwiches</option>
-        <option value="cereals">Céréales</option>
-        <option value="salads">Salades</option>
-        <option value="stews">Ragoûts</option>
-        <option value="noodles">Nouilles</option>
-        <option value="soups">Soupes</option>
-        <option value="desserts">Desserts</option>
-      </select>
-      <label for="favouriteFood">Mon encas préféré</label>
-    </div>
-    <div class="input-field col s6">
-      <label for="colour"><input type="color" id="colour" name="colour" value="#f5b942" />
-        Ma couleur fétiche</label>
-      <br> <br> <br>
-    </div>
-    <div class="input-field col s6">
-      <label for="contactInformation">
-        <input id="contactInformation" type="checkbox" />
-        <span>J'accepte que ma participation figure sur la liste publique.</span>
-      </label>
-    </div>
-  </form>
+  <button onclick="hideShow()" class="btn light-blue accent-1">Modifier cette entrée</button>
+  <button onclick="myDel()" class="btn red danger">Supprimer cette entrée</button>
+
+
+  <div id="editEntry" style="display: none">
+    <form action="">
+      <div class="input-field col s6">
+        <input id="name" type="text" class="validate" />
+        <label for="name">Nom Prénom</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="city" type="text" class="validate" />
+        <label for="city">City</label>
+      </div>
+      <div class="input-field col s6">
+        <select name="favouriteFood" id="favouriteFood">
+          <option value="sandwiches">Sandwiches</option>
+          <option value="cereals">Céréales</option>
+          <option value="salads">Salades</option>
+          <option value="stews">Ragoûts</option>
+          <option value="noodles">Nouilles</option>
+          <option value="soups">Soupes</option>
+          <option value="desserts">Desserts</option>
+        </select>
+        <label for="favouriteFood">Mon encas préféré</label>
+      </div>
+      <div class="input-field col s6">
+        <label for="colour"><input type="color" id="colour" name="colour" value="#f5b942" />
+          Ma couleur fétiche</label>
+        <br> <br>
+      </div>
+      <div class="input-field col s6">
+        <label for="contactInformation">
+          <input id="contactInformation" type="checkbox" />
+          <span>J'accepte que ma participation figure sur la liste publique.</span>
+        </label>
+      </div>
+      <br> <br>
+      <button class="btn light-blue accent-1 waves-effect waves-light" type="" id="" name="">Valider
+        <i class="material-icons right">send</i>
+      </button>
+    </form>
+  </div>
+
+
 </div>
 
 <script src="../assets/scripts/surveySingle.js"></script>
@@ -95,12 +105,24 @@
 ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
+  // Init Materialize Js functions
   M.AutoInit();
 
-  //value_element = document.getElementById("YourElementId").value
+  // Toggle visibility for Edit form
+  function hideShow() {
+    var x = document.getElementById("editEntry");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  //Display element information in the page
   document.getElementById("theName").innerHTML = Object.name;
   document.getElementById("theCity").innerHTML = Object.city;
   document.getElementById("theFood").innerHTML = Object.favouriteFood;
+  document.getElementById("theCard").setAttribute("style", "background-color:"  +  Object.color + '"');
 
 </script>
 </body>
