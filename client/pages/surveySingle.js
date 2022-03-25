@@ -1,4 +1,3 @@
-// Je récupère le #id
 // window.location.hash => va me donner #id
 // split ça va me permettre de diviser ma chaine de caractère
 // en sous élément qui sont séparé par le caractère en paramètre

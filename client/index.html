@@ -1,114 +1,149 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-          href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet"
-  />
-  <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-  />
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  <title>Accueil</title>
-</head>
-<body>
-<style>
-  .blurred {
-    filter: blur(3px);
-  }
-  .shadow {
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-    0px 8px 13px rgba(0,0,0,0.1),
-    0px 18px 23px rgba(0,0,0,0.1);
-  }
-</style>
-<nav class="green" role="navigation">
-  <div class="nav-wrapper container">
-    <a id="logo-container" href="#" class="brand-logo">ColorFoodCities</a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="/pages/liste.html">L'enquête</a></li>
-      <li><a href="/pages/participate.html">Participer</a></li>
-    </ul>
-
-    <ul id="nav-mobile" class="sidenav">
-      <li><a href="/pages/liste.html">L'enquête</a></li>
-      <li><a href="/pages/participate.html">Participer</a></li>
-    </ul>
-
-    <a href="#" data-target="nav-mobile" class="sidenav-trigger"
-    ><i class="material-icons">menu</i></a
-    >
-  </div>
-</nav>
-
-<div id="index-banner" class="parallax-container">
-  <div class="section no-pad-bot">
-    <div class="container">
-      <br /><br />
-      <h1 class="header center amber-text text-darken-2 shadow">
-        L'Enquête CFC
-      </h1>
-      <div class="row center">
-        <h5
-                class="header col s12 shadow white-text text-lighten-1 flow-text"
-        >
-          Notre enquête sur les habitudes alimentaires, selon la couleur
-          favorite et la ville de résidence. Des conclusions insoupçonnées
-          restent encore à être faites.
-        </h5>
-      </div>
-      <div class="row center">
-        <a
-                href="/pages/liste.html"
-                id="download-button"
-                class="btn-large waves-effect waves-light amber darken-2 pulse"
-        >Consulter les résultats</a
-        >
-      </div>
-      <br /><br />
-    </div>
-  </div>
-  <div class="parallax blurred">
-    <img
-            src="./assets/img/franki-chamaki-unsplash.jpg"
-            alt="Unsplashed background img 1"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
     />
-  </div>
-</div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <title>Accueil</title>
+  </head>
+  <body>
+    <style>
+      .blurred {
+        filter: blur(3px);
+      }
+      .shadow {
+        text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+          0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    <nav class="green" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">ColorFoodCities</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/pages/liste.html">L'enquête</a></li>
+          <li><a href="/pages/participate.html">Participer</a></li>
+        </ul>
 
-<footer class="page-footer green">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">The assignment</h5>
-        <p class="grey-text text-lighten-4">
-          Fullstack CRUD demo with Node.Js backend for Daniel Girard class
-          @Metz Numeric School.
-        </p>
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="/pages/liste.html">L'enquête</a></li>
+          <li><a href="/pages/participate.html">Participer</a></li>
+        </ul>
+
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+      </div>
+    </nav>
+
+    <div id="index-banner" class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <br /><br />
+          <h1 class="header center amber-text text-darken-2 shadow">
+            L'Enquête CFC
+          </h1>
+          <div class="row center">
+            <h5
+              class="header col s12 shadow white-text text-lighten-1 flow-text"
+            >
+              Notre enquête sur les habitudes alimentaires, selon la couleur
+              favorite et la ville de résidence. Des conclusions insoupçonnées
+              restent encore à être faites.
+            </h5>
+          </div>
+          <div class="row center">
+            <a
+              href="/pages/liste.html"
+              id="download-button"
+              class="btn-large waves-effect waves-light amber darken-2 pulse"
+              >Consulter les résultats</a
+            >
+          </div>
+          <br /><br />
+        </div>
+      </div>
+      <div class="parallax blurred">
+        <img
+          src="./assets/img/franki-chamaki-unsplash.jpg"
+          alt="Unsplashed background img 1"
+        />
       </div>
     </div>
-  </div>
-</footer>
+    <script>
+      //meteo
+      fetch(
+        "https://api.openweathermap.org/data/2.5/weather?q=Nancy,fr&APPID=463184919858518d5efb960d33003ad8&units=metric"
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
 
-<script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"
-></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script>
-  (function($){
-    $(function(){
+          document.querySelector(".meteo").insertAdjacentHTML(
+            "afterbegin",
+            `
+    <h4>${data.name}</h4>
+    <p>${data.weather[0].description}</p>
 
-      $('.sidenav').sidenav();
-      $('.parallax').parallax();
+    <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" />
+    <h2>${data.main.temp}°C</h2>
 
-    }); // end of document ready
-  })(jQuery);
-</script>
-</body>
+            <h5>Vent</h5>
+            <p>${data.wind.speed}Mètres/Secondes</p>
+
+            <h5>Visibility</h5>
+            <p>${data.visibility}Mètres</p>
+
+            <h5>Humidité</h5>
+            <p>${data.main.humidity}%</p>
+
+            <h5>Pression atmosphérique</h5>
+            <p>${data.main.pressure} mph</p>
+
+`
+          );
+        });
+    </script>
+    <div class="container">
+      <div class="row center">
+        <div class="meteo s12"></div>
+      </div>
+    </div>
+    <footer class="page-footer green">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">The assignment</h5>
+            <p class="grey-text text-lighten-4">
+              Fullstack CRUD demo with Node.Js backend for Daniel Girard class
+              @Metz Numeric School.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      (function ($) {
+        $(function () {
+          $(".sidenav").sidenav();
+          $(".parallax").parallax();
+        });
+      })(jQuery);
+    </script>
+  </body>
 </html>

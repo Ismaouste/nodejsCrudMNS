@@ -1,125 +1,135 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-          href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet"
-  />
-  <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-  />
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  <title>Participation</title>
-</head>
-<body>
-<nav class="green" role="navigation">
-  <div class="nav-wrapper container">
-    <a id="logo-container" href="/" class="brand-logo">ColorFoodCities</a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="/pages/liste.html">L'enquête</a></li>
-      <li><a href="/pages/participate.html">Participer</a></li>
-    </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <title>Participation</title>
+  </head>
+  <body>
+    <nav class="green" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="/" class="brand-logo">ColorFoodCities</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/pages/liste.html">L'enquête</a></li>
+          <li><a href="/pages/participate.html">Participer</a></li>
+        </ul>
 
-    <ul id="nav-mobile" class="sidenav">
-      <li><a href="/pages/liste.html">L'enquête</a></li>
-      <li><a href="/pages/participate.html">Participer</a></li>
-    </ul>
-    <a href="#" data-target="nav-mobile" class="sidenav-trigger"
-    ><i class="material-icons">menu</i></a
-    >
-  </div>
-</nav>
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="/pages/liste.html">L'enquête</a></li>
+          <li><a href="/pages/participate.html">Participer</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+      </div>
+    </nav>
 
-<br><br>
-<div class="container">
-  <div class="row" id="">
-    <div class="" id="theContent">
-
-      <div class="col s12 m12 l12 singleCard" id="theCard">
-        <h3 class="cart-title" id="theName">{{}}</h3>
-        <span class="card-content flow-text">
-          <strong>City :</strong><p id="theCity"></p><strong>
-          <br>Favourite food :</strong><p id="theFood"></p><br>
-        </span>
+    <br /><br />
+    <div class="container">
+      <div class="row" id="">
+        <div class="" id="theContent">
+          <div class="col s12 m12 l12 singleCard" id="theCard">
+            <h3 class="cart-title" id="theName">{{}}</h3>
+            <span class="card-content flow-text">
+              <strong>City :</strong>
+              <p id="theCity"></p>
+              <strong> <br />Favourite food :</strong>
+              <p id="theFood"></p>
+              <br />
+            </span>
+          </div>
+        </div>
       </div>
-
-    </div>
-  </div>
-  <hr>
-  <button onclick="hideShow()" class="btn light-blue accent-1">Modifier cette entrée</button>
-  <button id="myDel" class="btn red danger">Supprimer cette entrée</button>
-
-
-  <div id="editEntry" style="display: none">
-    <form action="">
-      <div class="input-field col s6">
-        <input id="name" type="text" class="validate" />
-        <label for="name">Nom Prénom</label>
-      </div>
-      <div class="input-field col s6">
-        <input id="city" type="text" class="validate" />
-        <label for="city">City</label>
-      </div>
-      <div class="input-field col s6">
-        <select name="favouriteFood" id="favouriteFood">
-          <option value="sandwiches">Sandwiches</option>
-          <option value="cereals">Céréales</option>
-          <option value="salads">Salades</option>
-          <option value="stews">Ragoûts</option>
-          <option value="noodles">Nouilles</option>
-          <option value="soups">Soupes</option>
-          <option value="desserts">Desserts</option>
-        </select>
-        <label for="favouriteFood">Mon encas préféré</label>
-      </div>
-      <div class="input-field col s6">
-        <label for="colour"><input type="color" id="colour" name="colour" value="#f5b942" />
-          Ma couleur fétiche</label>
-        <br> <br>
-      </div>
-      <div class="input-field col s6">
-        <label for="contactInformation">
-          <input id="contactInformation" type="checkbox" />
-          <span>J'accepte que ma participation figure sur la liste publique.</span>
-        </label>
-      </div>
-      <br> <br>
-      <button class="btn light-blue accent-1 waves-effect waves-light" type="" id="" name="">Valider
-        <i class="material-icons right">send</i>
+      <hr />
+      <button onclick="hideShow()" class="btn light-blue accent-1">
+        Modifier cette entrée
       </button>
-    </form>
-  </div>
+      <button id="myDel" class="btn red danger">Supprimer cette entrée</button>
 
+      <div id="editEntry" style="display: none">
+        <form action="">
+          <div class="input-field col s6">
+            <input id="name" type="text" class="validate" />
+            <label for="name">Nom Prénom</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="city" type="text" class="validate" />
+            <label for="city">City</label>
+          </div>
+          <div class="input-field col s6">
+            <select name="favouriteFood" id="favouriteFood">
+              <option value="sandwiches">Sandwiches</option>
+              <option value="cereals">Céréales</option>
+              <option value="salads">Salades</option>
+              <option value="stews">Ragoûts</option>
+              <option value="noodles">Nouilles</option>
+              <option value="soups">Soupes</option>
+              <option value="desserts">Desserts</option>
+            </select>
+            <label for="favouriteFood">Mon encas préféré</label>
+          </div>
+          <div class="input-field col s6">
+            <label for="colour"
+              ><input type="color" id="colour" name="colour" value="#f5b942" />
+              Ma couleur fétiche</label
+            >
+            <br />
+            <br />
+          </div>
+          <div class="input-field col s6">
+            <label for="contactInformation">
+              <input id="contactInformation" type="checkbox" />
+              <span
+                >J'accepte que ma participation figure sur la liste
+                publique.</span
+              >
+            </label>
+          </div>
+          <br />
+          <br />
+          <button
+            class="btn light-blue accent-1 waves-effect waves-light"
+            type=""
+            id=""
+            name=""
+          >
+            Valider
+            <i class="material-icons right">send</i>
+          </button>
+        </form>
+      </div>
+    </div>
 
-</div>
+    <script src="../assets/scripts/surveySingle.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      // Init Materialize Js functions
+      M.AutoInit();
 
-<script src="../assets/scripts/surveySingle.js"></script>
-<script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"
-></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script>
-  // Init Materialize Js functions
-  M.AutoInit();
-
-  // Toggle visibility for Edit form
-  function hideShow() {
-    var x = document.getElementById("editEntry");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
-
-
-
-</script>
-</body>
+      // Toggle visibility for Edit form
+      function hideShow() {
+        var x = document.getElementById("editEntry");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
 </html>
